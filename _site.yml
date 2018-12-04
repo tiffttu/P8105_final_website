@@ -1,0 +1,10 @@
+name: "Data Science Final Project"
+output_dir: "."
+navbar:
+  title: "Project Home"
+  right:
+    - text: Interactive Tool
+      icon: fa-file fa-lg
+      href: https://cbpascual.shinyapps.io/shiny/
+output:
+  html_document

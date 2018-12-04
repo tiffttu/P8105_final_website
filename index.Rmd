@@ -1,0 +1,10 @@
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+<div id="banner">
+  <img src="./static/hospital.jpg">
+</div>
+
+# Welcome `r fa('hand-paper')`
+
+poop
