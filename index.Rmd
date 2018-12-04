@@ -1,18 +1,22 @@
+<link href="./styles.css" rel="stylesheet"></link> 
+
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
 library(fontawesome)
 ```
 
-# Exploring Influential Factors in Colectomy Complications
+<h2 id="title">Influential Factors in Colectomy Complications</h2>
 
-### Authors: Christian Pascual | Justin Hsie | Tiffany Tu | Xiao Shi
+<p id="authors">Authors: Christian Pascual (cbp2128) | Justin Hsie (jih2119) | Tiffany Tu (tt2714) | Xiao Shi (xs2330)</p>
 
 <div id="banner">
-  <img src="./static/hospital.jpg">
+  <img src="./static/hospital.png">
 </div>
 
 ### Introduction
 
 Colectomies are surgical procedures that remove all of part of your large intestine. These surgeries are performed for various reasons, ranging from bowel obstruction to colon cancer to just being preventative. Over 250,000 colectomies are performed each year in the United States alone, representing an estimated 10% of the total volume of general surgeries. Given the prolific nature of the surgery, the rate of post-operation complication is astounding: the average rate of complication approached 30% in the last 10 years<sup>[1](https://www.medscape.org/viewarticle/711126)</sup>.
+
+Using hospital data gathered from multiple hospitals across Michigan, we set out to understand what contributes to these complications.
 
 ### Project Deliverables
 
@@ -22,7 +26,4 @@ Our project focused on using regression analyses to figure out what factors are 
 
 For your convenience, we've also produced a quick summary video of our project.
 
-
-
-
-This site is dedicated to housing the results of the Data Science Final Project, Fall 2018. You may find more information on the authors here.
+<p id="footer">This site is dedicated to housing the results of the Data Science Final Project, Fall 2018. You may find more information on the authors here.</p>

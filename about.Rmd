@@ -1,3 +1,5 @@
+<link href="./styles.css" rel="stylesheet"></link> 
+
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
 library(fontawesome)
 ```
