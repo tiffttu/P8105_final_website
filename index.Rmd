@@ -22,6 +22,9 @@ Using hospital data gathered from multiple hospitals across Michigan, we set out
 
 Our project focused on using regression analyses to figure out what factors are influential in increasing or decreasing the odds of complication in patients. We developed a detailed report, in addition to an interactive tool that users can use to create their own models with a toy version of the original dataset.
 
+### Project Overview
+
+
 ### Walkthrough of Project
 
 For your convenience, we've also produced a quick summary video of our project.
