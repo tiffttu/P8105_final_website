@@ -2,34 +2,56 @@
 
 body {
   font-family: Roboto;
-  background: #00274C;
+  background: #f5fffa;
+}
+
+.navbar {
+  background: #f5fffa;
 }
 
 #title {
   font-family: Roboto;
   text-align: center;
   font-weight: bold;
-  color: #ffcb0b;
+  color: #4068b7;
 }
 
 #authors {
   font-family: Roboto;
   text-align: center;
-  color: #ffcb0b;
+  color: #4068b7;
 }
 
-h3 {
-  color: #ffcb0b;
+h1 {
+  color: #4068b7;
   font-weight: bold;
 }
 
 p {
-  color: #ffcb0b;
+  font-size: 14px;
+  color: #4068b7;
+}
+
+a {
+  color: #FF9A33;
+}
+
+svg {
+  color: #4068b7;
 }
 
 #footer {
-  margin-top: 30px;
-  font-size: 8;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-size: 10;
   text-align: center;
-  color: #ffcb0b;
+  color: #4068b7;
+}
+
+#mailman {
+  margin: 0;
+  display: block;
+  height: 200px;
+  width: auto;
+  margin: 0 auto;
 }

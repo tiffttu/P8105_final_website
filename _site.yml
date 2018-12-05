@@ -3,11 +3,11 @@ output_dir: "."
 navbar:
   title: "Project Home"
   right:
-    - text: Report Summary
+    - text: Analysis 
       href: report.html
     - text: Interactive Tool
       href: https://cbpascual.shinyapps.io/shiny/
-    - text: screencast
+    - icon: fa-microphone fa-lg
       href: screencast.html
     - icon: fa-github fa-lg
       href: https://github.com/thecbp/P8105_final
