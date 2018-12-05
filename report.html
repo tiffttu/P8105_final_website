@@ -187,7 +187,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="report.html">In-Depth Report</a>
+  <a href="report.html">Report Summary</a>
 </li>
 <li>
   <a href="https://cbpascual.shinyapps.io/shiny/">Interactive Tool</a>
@@ -222,27 +222,44 @@ $(document).ready(function () {
 </div>
 <div id="data-and-methods" class="section level2">
 <h2>Data and methods</h2>
-<p>To figure out which variables have an impact on post-surgery complication, we performed a regression analysis. We are using surgery site infection as our outcome of interest, as infection is the most common type of complication.</p>
 <p>The raw data contains 10868 rows and 992 columns. Each row corresponds to a single colectomy and an incredible amount of information, including a bevy of laboratory, disease, surgery and patient data.</p>
+<p>To figure out which variables have an impact on post-surgery complication, we performed a regression analysis. We are using surgery site infection as our outcome of interest, as infection is the most common type of complication. With our literature review, we’ve decided to start with a subset of 20 variables. These candidate variables have been shown to be associated with SSI, so we’ll use automatic procedures to further cut down on covariates and get to a more robust, parsimonious model.</p>
 </div>
 <div id="exploratory-analysis" class="section level2">
 <h2>Exploratory Analysis</h2>
-<p>We explored SSI association with insurance status, prior health conditions, and surgical time.</p>
 <div id="insurance-status" class="section level4">
 <h4>Insurance status</h4>
+One variable we thought would have a relationship to SSI was a patient’s insurance status. We believed that patients with little to no coverage would be forced to go to less experienced hospitals and experience more SSI.<br />
+
 <div id="main" style="margin:left; width:380px;display:block">
 <p><img src="plots/insurance_plot-1.png"></p>
 </div>
+<p>There is generally no distinction between the insurance types, with most of the percentages hovering between 6 to 12 percent. Noticeably, patients with private insurance had a much higher percentage of SSIs at above 25 percent while patients with other insurance had 0 percent. However, this is most likely due to the small sample size of patients with those types of insurance and should not affect our conclusions.</p>
+<p>In the end, our hypotheses was incorrect; there was seemingly no relationship between insurance type and occurence of SSIs. This result indicates it would be a poor candidate for predicting SSI.</p>
 </div>
 <div id="prior-health-conditions" class="section level4">
 <h4>Prior health conditions</h4>
+To see how often a condition is related to SSI, we used a heatmap to see if any are particularly associated with SSI. We also looked at death as an outcome to see if any of these diseases are associated with it.<br />
+
+<div id="main" style="margin:left; width:380px;display:block">
+<p><img src="plots/givin-the-heat-1.png"></p>
+</div>
+<p>Comparing number of death and SSI cases side by side with each health condition, we see a nearly symmetric heatmap. There are fewer cases under patients that actually got SSI or died from the operation, so it is difficult to conclude any direct relationship between health condition and surgery outcome. Intrestingly, we can see that there are a great number of successful cases for patients with sleep apnea, specific carbohydrate diet, and hypertension related ot SSI.</p>
 </div>
 <div id="surgical-time" class="section level4">
 <h4>Surgical time</h4>
+We’ll look at the distribution of surgery times in the dataset to see if there’s any outliers. Most of the surgeries last around 250 minutes, but we can see that there is a heavy tail on the right.
+<div id="main" style="margin:left; width:380px;display:block">
+<p><img src="plots/ssi-vs-asa-plot-1.png"></p>
+</div>
+<p>Although there are some SSI-related surgeries that look to take longer than non-SSI colectomies, both follow a similar distribution. Thus, we cannot definitively say that the surgery time can help differentiate between SSI cases and non-SSI cases based on the plot.</p>
 </div>
 </div>
 <div id="discussion" class="section level2">
 <h2>Discussion</h2>
+<p>Our stepwise regression provided us with 23 covariates, with length of stay, surgical approaches 2, 3, and 4, age, ASA level 3, admission to ICU, surgery time, and BMI statistically significant.</p>
+<p>We are pleased to see that many of the variables that we found during our literature found themselves in the model and were statistically significant. However, many of the variables that were found to be risk factors in SSI did not end up in the final model or were not statistically significant.</p>
+<p>Although far from perfect, our model gives us some insight into what pre-surgical disease/traits contribute to SSI and supports some of the research done on this particular subject. We believe that our results can be improved by starting with more parsimonious models and building the stepwise regression from there.</p>
 </div>
 
 
