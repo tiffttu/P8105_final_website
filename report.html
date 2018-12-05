@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>report.utf8.md</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -193,6 +193,9 @@ $(document).ready(function () {
   <a href="https://cbpascual.shinyapps.io/shiny/">Interactive Tool</a>
 </li>
 <li>
+  <a href="screencast.html">screencast</a>
+</li>
+<li>
   <a href="https://github.com/thecbp/P8105_final">
     <span class="fa fa-github fa-lg"></span>
      
@@ -212,8 +215,34 @@ $(document).ready(function () {
 
 
 <p><link href="./styles.css" rel="stylesheet"></link></p>
-<div id="report-here" class="section level1">
-<h1>REPORT HERE</h1>
+<div id="about-our-project" class="section level2">
+<h2>About our project</h2>
+<p>We want to investigate contributing factors of the risk of post-operative complication using a dataset on colectomy surgeries performed 2014 - 2016 from multiple hospitals in Michigan. In addition, we created an application that enables interested users to use a subset of the data to create their own models, based on variables that they might find useful or that we may have not considered.</p>
+<p>Our full report can be found <a href="https://github.com/thecbp/P8105_final/blob/master/report.md">here</a>.</p>
+</div>
+<div id="data-and-methods" class="section level2">
+<h2>Data and methods</h2>
+<p>To figure out which variables have an impact on post-surgery complication, we performed a regression analysis. We are using surgery site infection as our outcome of interest, as infection is the most common type of complication.</p>
+<p>The raw data contains 10868 rows and 992 columns. Each row corresponds to a single colectomy and an incredible amount of information, including a bevy of laboratory, disease, surgery and patient data.</p>
+</div>
+<div id="exploratory-analysis" class="section level2">
+<h2>Exploratory Analysis</h2>
+<p>We explored SSI association with insurance status, prior health conditions, and surgical time.</p>
+<div id="insurance-status" class="section level4">
+<h4>Insurance status</h4>
+<div id="main" style="margin:left; width:380px;display:block">
+<p><img src="plots/insurance_plot-1.png"></p>
+</div>
+</div>
+<div id="prior-health-conditions" class="section level4">
+<h4>Prior health conditions</h4>
+</div>
+<div id="surgical-time" class="section level4">
+<h4>Surgical time</h4>
+</div>
+</div>
+<div id="discussion" class="section level2">
+<h2>Discussion</h2>
 </div>
 
 

@@ -7,6 +7,8 @@ navbar:
       href: report.html
     - text: Interactive Tool
       href: https://cbpascual.shinyapps.io/shiny/
+    - text: screencast
+      href: screencast.html
     - icon: fa-github fa-lg
       href: https://github.com/thecbp/P8105_final
 

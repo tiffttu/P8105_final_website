@@ -4,4 +4,25 @@
 library(fontawesome)
 ```
 
-# REPORT HERE
+## About our project
+We want to investigate contributing factors of the risk of post-operative complication using a dataset on colectomy surgeries performed 2014 - 2016 from multiple hospitals in Michigan. In addition, we created an application that enables interested users to use a subset of the data to create their own models, based on variables that they might find useful or that we may have not considered.    
+           
+Our full report can be found  [here](https://github.com/thecbp/P8105_final/blob/master/report.md). 
+    
+## Data and methods
+To figure out which variables have an impact on post-surgery complication, we performed a regression analysis. We are using surgery site infection as our outcome of interest, as infection is the most common type of complication. 
+       
+The raw data contains 10868 rows and 992 columns. Each row corresponds to a single colectomy and an incredible amount of information, including a bevy of laboratory, disease, surgery and patient data.       
+      
+## Exploratory Analysis
+We explored SSI association with insurance status, prior health conditions, and surgical time. 
+
+#### Insurance status
+<div id="main" style="margin:left; width:380px;display:block" />
+<img src="./plots/insurance_plot-1.png">
+</div>
+#### Prior health conditions
+
+#### Surgical time
+
+## Discussion
