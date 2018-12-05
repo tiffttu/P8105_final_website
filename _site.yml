@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Project Home"
   right:
-    - text: In-Depth Report
+    - text: Report Summary
       href: report.html
     - text: Interactive Tool
       href: https://cbpascual.shinyapps.io/shiny/
