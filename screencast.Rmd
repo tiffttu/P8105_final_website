@@ -1,6 +1,10 @@
 <link href="./styles.css" rel="stylesheet"></link> 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
 ```
 
+# `r fa('chevron-right')` Project Screencast
+
+Want a quick 2 minute summary of the site? Look no further!
+
+Now that you know what we've done, try out our [interactive tool](https://cbpascual.shinyapps.io/shiny/) and make your own model!

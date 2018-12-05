@@ -9,7 +9,7 @@ library(fontawesome)
 <p id="authors">Authors: [Christian Pascual](https://thecbp.github.io/cbpascual.github.io) (cbp2128) | [Justin Hsie](https://justinhsie.github.io) (jih2119) | [Tiffany Tu](https://tiffttu.github.io) (tt2714) | [Xiao Shi](https://xiao-shi.github.io) (xs2330)</p>
 
 <div id="banner">
-  <img src="./static/hospital.png">
+  <img src="./static/tools.png">
 </div>
 
 # `r fa('chevron-right')` Introduction
